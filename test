@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -e
+
+diff=`git ls-files -m | grep languages.yml`
+
+if [ ! -z $diff ]; then
+  echo "There are updates on the linguist repo, update required: \n\n\t$diff"
+  exit 1
+fi
+
+exit 0
