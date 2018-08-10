@@ -1,0 +1,33 @@
+{
+  "name": "gh-linguist",
+  "version": "1.0.0",
+  "description": "GitHub's linguist data base exposed as a Node.js module",
+  "license": "MIT",
+  "repository": "github:rafaelrinaldi/gh-linguist",
+  "main": "dist/linguist.js",
+  "module": "dist/linguist.es.js",
+  "source": "index.js",
+  "umd:main": "dist/linguist.umd.js",
+  "keywords": [
+    "gh",
+    "github",
+    "linguist",
+    "programming",
+    "languages"
+  ],
+  "scripts": {
+    "test": "NODE_ENV=test prettier-standard index.js",
+    "prebuild": "rm -rf dist",
+    "build": "microbundle --name=linguist --compress=false --sourcemap=false"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "microbundle": "^0.6.0",
+    "prettier-standard": "^8.0.0"
+  },
+  "dependencies": {
+    "read-yaml": "^1.1.0"
+  }
+}
