@@ -19,6 +19,12 @@ import linguist from 'gh-linguist'
 const languages = await linguist()
 ```
 
+## API
+
+### `linguist()`
+
+Returns a `Promise` that resolves with the contents of Linguist's YAML data base parsed as a plain JavaScript object.
+
 ## License
 
 - Language grammars borrowed from Linguist are covered by [their repositories' respective licenses][vendor-licenses].
