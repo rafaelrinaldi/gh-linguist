@@ -4,7 +4,7 @@ const readYaml = promisify(yaml)
 
 export default async function run () {
   try {
-    const parsed = await readYaml('./languages.yml')
+    const parsed = await readYaml('languages.yml')
     return parsed
   } catch (error) {
     throw error
