@@ -21,7 +21,8 @@
     "build": "microbundle --name=linguist --compress=false --sourcemap=false"
   },
   "files": [
-    "dist"
+    "dist",
+    "languages.yml"
   ],
   "devDependencies": {
     "microbundle": "^0.6.0",
