@@ -2,5 +2,6 @@
 
 echo "Updating languages file..."
 curl -Ls https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml > languages.yml
+cp languages.yml dist/
 echo "Done"
 exit 0
