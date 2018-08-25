@@ -17,12 +17,11 @@
   ],
   "scripts": {
     "test": "NODE_ENV=test prettier-standard index.js",
-    "prebuild": "rm -rf dist",
+    "prebuild": "mkdir -p dist/ && rm -rf dist/* && cp languages.yml dist/",
     "build": "microbundle --name=linguist --compress=false --sourcemap=false"
   },
   "files": [
-    "dist",
-    "languages.yml"
+    "dist"
   ],
   "devDependencies": {
     "microbundle": "^0.6.0",
